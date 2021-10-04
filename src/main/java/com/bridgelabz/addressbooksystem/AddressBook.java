@@ -4,25 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddressBook {
-    String addrName;
-    List<PersonContact> personList = new ArrayList<>();
+    private List<Contact> contacts;
 
-    public AddressBook(String addrName) {
-
-        this.addrName = addrName;
-    }
-    public void setAddrName(String addrName){
-        this.addrName = addrName;
-    }
-    public String getAddrName(){
-        return addrName;
-    }
-    public List<PersonContact> getPersonList(){
-        return personList;
+    public List<Contact> getContacts() {
+        return contacts;
     }
 
-    public void addContactToList(PersonContact contact) {
-
-        this.personList.add(contact);
+    public void setContacts(List<Contact> contacts) {
+        this.contacts = contacts;
     }
+
+
 }
